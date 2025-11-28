@@ -123,20 +123,23 @@ The dashboard includes:
 
 ### ▶️ **Steps**
 1. Clone the repository:
-    git clone <your-github-repo-link>
+
+   git clone https://github.com/kishoree1014-eng/customer_behavior_analysis
 
 
-2. Install dependencies:
-    pip install -r requirements.txt
+3. Install dependencies:
+
+   pip install -r requirements.txt
 
 
-3. Run the notebook:
-    jupyter notebook
+5. Run the notebook:
 
-4. Load cleaned data into MySQL and run SQL scripts.
+   jupyter notebook
 
-5. Open the `.pbix` file in Power BI to view the dashboard.
+7. Load cleaned data into MySQL and run SQL scripts.
 
-6. Review the report and Gamma presentation in the `outputs` folder.
+8. Open the `.pbix` file in Power BI to view the dashboard.
+
+9. Review the report and Gamma presentation in the `outputs` folder.
 
 ---
