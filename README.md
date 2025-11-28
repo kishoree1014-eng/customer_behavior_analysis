@@ -1,146 +1,142 @@
-# **Customer Shopping Behavior – Data Analytics Project**
+# 📊 **Customer Shopping Behavior – Data Analytics Project**
 
-## **Overview**
+## 📝 **Overview**
 This project provides a complete end-to-end data analytics workflow using the **Customer Shopping Behavior** dataset.  
-The goal is to understand customer purchasing patterns, evaluate sales performance, analyze product categories, and identify behavior trends that influence revenue.
+The main objective is to understand customer purchasing patterns, analyze sales performance, and uncover behavior trends that influence revenue.
 
 The project includes:
-- Python-based exploratory data analysis (EDA) and data cleaning  
-- SQL analysis using MySQL Server  
-- An interactive Power BI dashboard  
-- A final analytical report  
-- A presentation created using Gamma  
+- 🐍 Python-based exploratory data analysis (EDA) and data cleaning  
+- 🗄️ SQL analysis using MySQL Server  
+- 📊 Interactive Power BI dashboard  
+- 📄 Analytical report  
+- 🎤 Presentation created using Gamma  
 
 ---
 
-## **Dataset**
+## 📂 **Dataset**
 - **Name:** Customer Shopping Behavior  
 - **Source:** Online  
 - **Rows:** ~3,900  
 - **Columns:** 19  
-- **Description:** Contains customer demographics, purchase details, subscription status, product categories, review ratings, payment information, and shipping preferences.
+- **Description:** Includes customer demographics, purchase attributes, subscription status, product categories, review ratings, payment types, and shipping preferences.
 
 ---
 
-## **Tools and Technologies**
-- **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
-- **Jupyter Notebook / VS Code**  
-- **MySQL Server**  
-- **Power BI Desktop**  
-- **Gamma App**  
-- **GitHub**  
+## 🛠️ **Tools and Technologies**
+- 🐍 Python (Pandas, NumPy, Seaborn, Matplotlib)  
+- 💻 Jupyter Notebook / VS Code  
+- 🗄️ MySQL Server  
+- 📊 Power BI Desktop  
+- 🎨 Gamma App  
+- 🌐 GitHub  
 
 ---
 
-## **Project Steps**
+## 🚀 **Project Steps**
 
-### **1. Load Data in Python**
-- Imported the dataset using Pandas  
-- Reviewed dataset structure, data types, and initial observations  
-- Identified missing values and potential inconsistencies  
+### 🔹 **1. Load Data in Python**
+- Loaded dataset using Pandas  
+- Checked structure, data types, missing values  
+- Initial inspection of inconsistencies  
 
-### **2. Exploratory Data Analysis (EDA)**
-- Analyzed age distribution, customer segments, and purchasing behavior  
-- Identified top-performing and low-performing product categories  
-- Examined subscription status impact on purchase frequency  
-- Analyzed relationships such as:
-  - Age group vs revenue  
-  - Category vs sales  
-- Checked correlations between key variables (purchase amount, review rating, previous purchases)  
-- Created visualizations (histograms, boxplots, bar charts, heatmaps)
+### 🔹 **2. Exploratory Data Analysis (EDA)**
+- Analyzed customer age distribution and purchase behavior  
+- Identified top and low-performing product categories  
+- Examined subscription behavior impact  
+- Explored relationships (age group vs revenue, category vs sales)  
+- Checked correlations between purchase amount, reviews, and previous purchases  
+- Generated visualizations (bar charts, histograms, heatmaps, boxplots)
 
-### **3. Data Cleaning**
-- Filled numerical missing values using **average values**  
-- Filled categorical missing values using **mode** or **"Unknown"**  
-- Removed duplicate records  
+### 🔹 **3. Data Cleaning**
+- Filled numerical missing values with **averages**  
+- Filled categorical missing values with **mode** or **Unknown**  
+- Removed duplicates  
+- Standardized text formatting  
 - Corrected inconsistent category names  
-- Standardized string formatting (lowercase, trimmed spaces)  
 - Converted columns to correct data types  
-- Detected and handled outliers  
-- Created new calculated fields (age groups, revenue indicators)
+- Detected and treated outliers  
+- Created new fields: age groups, revenue metrics  
 
-### **4. SQL Analysis (MySQL Server)**
-Performed SQL queries including:
-- Customer behavior analysis (new vs returning, subscription effects)  
-- Sales analysis (revenue by category, average purchase amount)  
-- Rating checks (top-rated categories, satisfaction scores)
+### 🔹 **4. SQL Analysis (MySQL Server)**
+Performed essential SQL analysis:
+- Customer behavior (new vs returning, subscription patterns)  
+- Sales metrics (revenue by category, avg purchase amount)  
+- Rating checks (satisfaction levels, top-rated categories)
 
-SQL operations included:
+SQL operations:
 - `GROUP BY`, `ORDER BY`, `HAVING`  
-- Aggregations (`SUM`, `AVG`, `COUNT`)  
-- Filtering (`WHERE`)  
-- Joins for cross-table insights  
+- Aggregations (`SUM`, `COUNT`, `AVG`)  
+- Filtering with `WHERE`  
+- Joins for cross-table analysis  
 
 ---
 
-## **Power BI Dashboard**
-The dashboard includes the following key visuals:
+## 📊 **Power BI Dashboard**
+The dashboard includes:
 
-- **Percentage of customers by subscription status**  
-- **Revenue by category**  
-- **Sales by category**  
-- **Revenue by age group**  
-- **Sales by age group**  
+- 🟣 Subscription status breakdown  
+- 🟦 Revenue by category  
+- 🟦 Sales by category  
+- 🟩 Revenue by age group  
+- 🟩 Sales by age group  
 
-### **Key Performance Indicators (KPIs)**
-- **Number of customers:** 3.9K  
-- **Average purchase amount:** $59.76  
-- **Average review rating:** 3.75  
-
-The dashboard provides clear visibility into revenue trends, customer segments, category performance, and behavior patterns.
+### **KPIs**
+- 👥 **Number of Customers:** 3.9K  
+- 💰 **Average Purchase Amount:** $59.76  
+- ⭐ **Average Review Rating:** 3.75  
 
 ---
 
-## **Insights**
+## 🔍 **Insights**
 
-### **1. Subscription Behavior**
+### ⭐ **1. Subscription Behavior**
 - Only **27%** of customers are subscribed.  
-- Subscribed customers contribute **higher revenue** and show more frequent purchasing.
+- Subscribed customers show **higher purchase frequency and revenue**.
 
-### **2. Category Performance**
-- **Accessories** and **Clothing** are top revenue-generating categories.  
-- Some categories have lower engagement, indicating room for targeted promotions.
+### 📦 **2. Category Performance**
+- **Accessories** and **Clothing** dominate revenue.  
+- Low-performing categories offer opportunities for improvement.
 
-### **3. Age Group Trends**
-- Middle-aged customers show the **highest purchase activity and revenue contribution**.  
-- Younger customers purchase more trend-based items.
+### 👨‍👩‍👧 **3. Age Group Trends**
+- Middle-aged customers generate **the most revenue**.  
+- Younger customers prefer trend-based categories.
 
-### **4. Purchase Amount Patterns**
-- The **average purchase amount is $59.76**.  
-- Customers with higher review ratings often make **repeat purchases**.
+### 💳 **4. Purchase Amount Trends**
+- Average purchase amount: **$59.76**  
+- Higher-rated customers tend to be **repeat buyers**.
 
-### **5. Ratings Overview**
-- The average rating of **3.75** suggests moderate customer satisfaction.
+### ⭐ **5. Ratings Overview**
+- With an average rating of **3.75**, overall satisfaction is moderate.
 
 ---
 
 
-## **How to Run**
+---
 
-### **Prerequisites**
+## ⚙️ **How to Run**
+
+### ✅ **Prerequisites**
 - Python 3.8+  
 - MySQL Server  
 - Power BI Desktop  
 - Gamma account (optional)
 
-### **Steps**
+### ▶️ **Steps**
 1. Clone the repository:
-
     git clone <your-github-repo-link>
 
 
-2. Install the required Python libraries:
-
+2. Install dependencies:
     pip install -r requirements.txt
 
 
-3. Run the Jupyter Notebook:
-
+3. Run the notebook:
     jupyter notebook
 
+4. Load cleaned data into MySQL and run SQL scripts.
 
-4. Load the cleaned dataset into MySQL and run the SQL scripts in the `sql/` folder.  
+5. Open the `.pbix` file in Power BI to view the dashboard.
 
-5. Open the Power BI file (`.pbix`) to interact with the dashboard.  
+6. Review the report and Gamma presentation in the `outputs` folder.
 
-6. Review the report and presentation in the `outputs/` folder.  
+---
